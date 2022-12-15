@@ -12,7 +12,10 @@
   "dependencies": {
     "express": "^4.18.2",
     "nanoid": "^4.0.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
     "sequelize": "^6.27.0",
-    "sqlite3": "^5.1.4"
+    "sqlite3": "^5.1.4",
+    "uuid": "^9.0.0"
   }
 }

@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(express.static("public"))
 app.use(express.urlencoded({extended:false}))
 
-// app.use("/urlapi",shortUrl)
+app.use("/urlapi",shortUrl)
 app.use("/",homeRoutes)
 try {
     app.listen(PORT,(data,error)=>{
