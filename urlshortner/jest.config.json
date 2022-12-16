@@ -1,0 +1,5 @@
+{
+    "testRegex": "((\\.)([sS]pec))\\.js?$",
+    "collectCoverage": true,
+    "testResultsProcessor": "jest-sonar-reporter"
+}
