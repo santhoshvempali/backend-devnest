@@ -1,0 +1,2 @@
+const stripeKey="sk_test_51MH9H4SAp0ZZZN6pUxad6yCmzNWq0nYcZBNIXMPFyhyL5c82xALcHSU7IahhqeX2WtmSiQfkE4meGtnIrIxyt1x000eBxZH2Kc"
+module.exports={stripeKey}
