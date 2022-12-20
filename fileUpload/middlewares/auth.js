@@ -20,8 +20,9 @@ const isAuthenticated=async(req,res,next)=>{
             return res.status(404).json({ err: "User not found" });
           }
       
-          req.user = user;
-          next();
+        req.user = user;
+        console.log(req.user)
+        next();
     } catch (error) {
             console.log(error);
             res.status(401).json({
@@ -40,4 +41,15 @@ const isSeller = (req, res, next) => {
     }
   };
 
-module.exports={isAuthenticated,isSeller}
+const isBuyer = (req, res, next) => {
+    if (!req.user.dataValues.isSeller) {
+      next();
+    } else {
+      res.status(401).json({
+        err: "You are not a Buyer",
+      });
+    }
+  };
+
+
+module.exports={isAuthenticated,isSeller,isBuyer}
