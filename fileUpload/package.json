@@ -1,9 +1,13 @@
 {
   "dependencies": {
     "bcrypt": "^5.1.0",
+<<<<<<< HEAD
     "cors": "^2.8.5",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
+=======
+    "discord.js": "^14.7.1",
+>>>>>>> 99c76c7449444e90ad48aecf00346f29580c7a98
     "express": "^4.18.2",
     "jsonpath": "^1.1.1",
     "jsonwebtoken": "^8.5.1",
@@ -11,9 +15,13 @@
     "nodemon": "^2.0.20",
     "pg": "^8.8.0",
     "sequelize": "^6.27.0",
+<<<<<<< HEAD
     "stripe": "^11.4.0",
     "swagger-jsdoc": "^6.2.7",
     "swagger-ui-express": "^4.6.0"
+=======
+    "stripe": "^11.4.0"
+>>>>>>> 99c76c7449444e90ad48aecf00346f29580c7a98
   },
   "scripts": {
     "start": "nodemon server.js"
