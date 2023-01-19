@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <div class="chat_app">
+          <div id="sidebar" class="left_sidebar">
+            <div class="logo_text">
+              <span>Chat <span class="colored">App</span></span>
+            </div>
+  
+            <span class="user_label">Users</span>
+            <div id="active_users_list" class="active_users_list"></div>
+          </div>
+  
+          <div class="chat_area">
+            <div class="chat_bg">
+              <div id="chat" class="chat"></div>
+  
+              <div class="chat_input">
+                <input
+                  type="text"
+                  id="messageInput"
+                  placeholder="Enter message"
+                />
+                <button id="send_message_btn" class="send_message_btn" id="send">
+                  SEND
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="right_sidebar">
+            <span class="room_label">Rooms</span>
+            <div id="active_rooms_list" class="active_rooms_list"></div>
+  
+            <div class="room_input">
+              <input type="text" id="roomInput" placeholder="Create room" />
+              <button id="room_add_icon_holder" class="room_add_icon_holder">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <script src="app.js"></script>
+</body>
+</html>
